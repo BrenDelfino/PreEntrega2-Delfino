@@ -1,0 +1,181 @@
+
+/*** Reset ***/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+background-color: #e9e4e4;
+}
+
+/*** Estilo navbar gral***/
+
+header nav{
+    background-color: #c31632;
+}
+
+header nav div div ul li a:hover{
+    text-transform: uppercase;
+}
+
+/*** Estilo footer gral ***/
+
+footer nav {
+    background-color: #757575;
+}
+
+footer p {
+    text-align: center;
+    color: #757575;
+    margin: 10px;
+}
+
+footer nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+footer nav div div ul li a:hover {
+    text-transform: uppercase;
+}
+
+/*** Estilo main ***/
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px;
+    color: #c31632;
+}
+
+.izquierda {
+    background-color: white;
+    border-radius: 15px;
+    width: 500px;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+    box-shadow: 5px 5px 10px #212121;
+}
+
+.derecha {
+    width: 500px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #212121;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+main div {
+    display: block;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+/*** Estilo main index testimonios ***/
+
+.carta {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+/*** Estilo contacto html con GRID ***/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #212121;
+}
+
+.item1, .item4 {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #212121;
+}
+
+.item3 {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #212121;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #212121;
+}
+
+/*** Estilos generales productos html ***/
+
+.categorias1, .categorias2, .categorias3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.categorias1 img, .categorias2 img, .categorias3 img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*** Responsive para dispositivos moviles productos y preguntas frecuentes***/
+
+@media (max-width: 768px) {
+    .categorias1, .categorias2, .categorias3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categorias1 img, .categorias2 img, .categorias3 img {
+        max-width: 90%;
+    }
+}
+
+/*** Responsive para pantallas de escritorio productos y preguntas frecuentes ***/
+
+@media (min-width: 769px) {
+    .categorias1, .categorias2, .categorias3 {
+        flex-direction: row;
+    }
+
+    .categorias1 img, .categorias2 img, .categorias3 img {
+        max-width: 300px;
+    }
+}
